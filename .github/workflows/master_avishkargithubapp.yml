@@ -29,4 +29,4 @@ jobs:
         app-name: 'avishkargithubapp'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_779834ee0cac4ec8be4f7692019a9b20 }}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: '$(System.DefaultWorkingDirectory)/**/*.war'
